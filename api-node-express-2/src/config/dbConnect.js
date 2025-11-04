@@ -1,6 +1,6 @@
 import mongoose from "mongoose"
 
-mongoose.connect("mongodb+srv://admin:admin123@studies.ni1mkbt.mongodb.net/?appName=Studies");
+mongoose.connect(process.env.STRING_CONEXAP_DB);
 
 let db = mongoose.connection;
 
